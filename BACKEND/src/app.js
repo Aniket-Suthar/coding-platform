@@ -8,7 +8,7 @@ dotenv.config();
 const connectDB = require('../config/connectDB');
 
 const app = express();
-`   `
+
 // Enable CORS middleware
 app.use(cors({ origin: true, credentials: true }));
 app.use(cookieParser());
