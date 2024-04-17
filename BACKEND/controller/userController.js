@@ -58,13 +58,12 @@ exports.loginUser = async (req, res) => {
 
         // Send the tokens to the client
         const options = {
-            httpOnly: true,
             secure: true,
             sameSite: 'strict'
 
         }
         res.status(200)
-            .cookie("access", accessToken, options)
+            .cookie("access", accessToken)
             .json({ message: "User Found", userId: user._id, accessToken, refreshToken });
 
     }

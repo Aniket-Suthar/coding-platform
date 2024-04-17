@@ -5,7 +5,7 @@ exports.authenticateToken = async (req, res, next) => {
     // const token = authHeader && authHeader.split(' ')[1];
     console.log("Token " + token);
 
-    if (token == null) {
+    if (token === null) {
         return res.status(401).json({ error: "Missing token" });
     }
 
