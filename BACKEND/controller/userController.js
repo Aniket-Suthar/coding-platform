@@ -63,7 +63,7 @@ exports.loginUser = async (req, res) => {
 
         }
         res.status(200)
-            .cookie("access", accessToken)
+            .cookie("access", accessToken, options)
             .json({ message: "User Found", userId: user._id, accessToken, refreshToken });
 
     }

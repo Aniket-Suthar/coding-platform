@@ -5,7 +5,7 @@ exports.addCodingQuestion = async (req, res) => {
     try {
         const { questionName, difficultyLevel, url, conceptType } = req.body;
         const userId = req.user.userId;
-        // console.log(userId)// Retrieve user ID from authenticated request
+        console.log(userId)// Retrieve user ID from authenticated request
         const codingQuestion = new CodingQuestion({
             questionName,
             difficultyLevel,
