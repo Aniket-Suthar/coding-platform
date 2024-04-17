@@ -58,7 +58,7 @@ exports.loginUser = async (req, res) => {
 
         // Send the tokens to the client
         const options = {
-
+            secure: process.env.NODE_ENV === 'production',
             SameSite: 'none',
             domain: '.coding-platform-0r4n.onrender.com'
         }
