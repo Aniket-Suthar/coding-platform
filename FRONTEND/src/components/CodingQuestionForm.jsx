@@ -64,7 +64,7 @@ function CodingQuestionForm() {
     return (
         <>
 
-            <a href="/" className="absolute top-0 left-0p-2"><CottageIcon sx={{ fontSize: 40 }} style={{ marginLeft: '1rem', marginTop: '1rem' }} /></a>
+            <a href="/" className="absolute top-2 left-0p-2" style={{ fontWeight: "bold", fontSize: "2rem" }}><CottageIcon sx={{ fontSize: 40 }} style={{ marginLeft: '1rem' }} />  Add your Question</a>
 
 
             <div className="flex justify-center items-center h-screen" style={{ background: 'linear-gradient(to bottom, #000000 0%, #660066 100%)' }}>

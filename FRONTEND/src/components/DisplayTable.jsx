@@ -73,7 +73,7 @@ function CodingQuestionForm() {
 
     return (
         <>
-            <a href="/" className="absolute top-0 left-0"><CottageIcon sx={{ fontSize: 50 }} style={{ marginLeft: '1rem', marginTop: '1rem' }} /></a>
+            <a href="/" className="absolute left-0" style={{ fontWeight: "bold", color: "white", marginTop: '1rem', fontSize: "2rem" }}><CottageIcon sx={{ fontSize: 50 }} style={{ marginLeft: '1rem' }} /> Personalized Questions</a>
             <div className="flex justify-center items-center h-screen bg-gradient-to-br from-purple-900 to-black">
                 <div className="max-w-7xl w-full bg-white bg-opacity-80 shadow-lg rounded-lg overflow-hidden p-6 text-gray-800">
                     <h2 className="text-center text-2xl font-semibold mb-6">Predefined Questions</h2>
