@@ -35,7 +35,7 @@ function Community() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/posts');
+        const response = await axios.get('https://coding-platform-0r4n.onrender.com/api/posts');
         setPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
@@ -46,7 +46,7 @@ function Community() {
 
   const handlePost = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/posts', {
+      const response = await axios.post('https://coding-platform-0r4n.onrender.com/api/posts', {
         name,
         title,
         description

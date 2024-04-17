@@ -66,7 +66,7 @@ export default function SignUp() {
         event.preventDefault();
         // Send form data to the backend API
         console.log(formData)
-        const response = await axios.post('http://localhost:5000/api/register', formData)
+        const response = await axios.post('https://coding-platform-0r4n.onrender.com/api/register', formData)
             .then(() => {
                 setSuccessMessage("Registered Successfully")
                 // Clear success message after 2 seconds

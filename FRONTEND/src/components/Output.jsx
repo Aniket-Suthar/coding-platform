@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Box, Button, Text, useToast } from "@chakra-ui/react";
 import { executeCode } from "../api";
-import { IconButton } from '@chakra-ui/react';
-import CottageIcon from '@mui/icons-material/Cottage';
+
 
 const Output = ({ editorRef, language }) => {
   const toast = useToast();

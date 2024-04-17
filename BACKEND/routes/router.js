@@ -5,7 +5,7 @@ const userController = require('../controller/userController');
 const { authenticateToken } = require('../middleware/authenticUser');
 const postController = require('../controller/postController');
 // Route to add a new coding question
-router.post('/codingQuestions', authenticateToken, addCodingQuestion);
+router.post('/codingQuestions', addCodingQuestion);
 
 // Route to get all questions for the logged-in user
 router.get('/getallquestion', authenticateToken, getAllQuestions);

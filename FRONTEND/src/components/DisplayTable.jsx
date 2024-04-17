@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import 'tailwindcss/tailwind.css';
-import { Button } from '@chakra-ui/react';
 import CottageIcon from '@mui/icons-material/Cottage';
 
 function CodingQuestionForm() {
@@ -18,7 +17,7 @@ function CodingQuestionForm() {
         // Fetch data from the API endpoint
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/getallquestion', { withCredentials: true });
+                const response = await axios.get('https://coding-platform-0r4n.onrender.com/api/getallquestion', { withCredentials: true });
                 setQuestions(response.data); // Assuming response.data is an array of questions
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -37,7 +36,7 @@ function CodingQuestionForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`http://localhost:5000/api/updatequestion/${editingQuestion._id}`, formData, { withCredentials: true });
+            const response = await axios.put(`https://coding-platform-0r4n.onrender.com/api/updatequestion/${editingQuestion._id}`, formData, { withCredentials: true });
             console.log('Question updated:', response.data);
             // Update the question in the state
 
@@ -63,7 +62,7 @@ function CodingQuestionForm() {
     const handleDelete = async (question) => {
         try {
             console.log(question);
-            await axios.delete(`http://localhost:5000/api/deletequestion/${question._id}`, { withCredentials: true });
+            await axios.delete(`https://coding-platform-0r4n.onrender.com/api/deletequestion/${question._id}`, { withCredentials: true });
             // Remove the question from the state only after successful deletion
             setQuestions(prevQuestions => prevQuestions.filter(q => q._id !== question._id));
         } catch (error) {

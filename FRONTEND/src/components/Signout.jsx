@@ -10,7 +10,7 @@ const SignOut = () => {
     const handleSignOut = async () => {
         try {
             // Make a POST request to the logout endpoint
-            const resp = await axios.post('http://localhost:5000/api/logout', {}, { withCredentials: true, credentials: "include" });
+            const resp = await axios.post('https://coding-platform-0r4n.onrender.com/api/logout', {}, { withCredentials: true, credentials: "include" });
             console.log(resp)
 
             // Show confirmation message

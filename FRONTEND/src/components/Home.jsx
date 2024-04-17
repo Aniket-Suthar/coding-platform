@@ -90,7 +90,7 @@ export default function Home() {
   }, []);
 
   const handleLogin = async () => {
-    const response = await axios.get('http://localhost:5000/api/getuser');
+    const response = await axios.get('https://coding-platform-0r4n.onrender.com/api/getuser');
     Cookies.set('userData', response.data);
 
     // setTimeout(() => {
