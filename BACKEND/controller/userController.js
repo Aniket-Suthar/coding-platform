@@ -59,7 +59,7 @@ exports.loginUser = async (req, res) => {
         // Send the tokens to the client
         const options = {
             secure: process.env.NODE_ENV === 'production',
-            SameSite: 'none'
+            SameSite: 'None'
         }
 
         res.status(200)
