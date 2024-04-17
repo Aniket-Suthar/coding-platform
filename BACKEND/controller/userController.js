@@ -58,12 +58,13 @@ exports.loginUser = async (req, res) => {
 
         // Send the tokens to the client
         const options = {
-            secure: true,
+
+            SameSite: 'none',
             domain: '.coding-platform-0r4n.onrender.com'
         }
 
         res.status(200)
-            .cookie("access", accessToken)
+            .cookie("access", accessToken, options)
             .json({ message: "User Found", userId: user._id, accessToken, refreshToken });
 
     }

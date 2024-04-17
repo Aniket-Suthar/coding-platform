@@ -10,12 +10,12 @@ const connectDB = require('../config/connectDB');
 const app = express();
 
 // Enable CORS middleware
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors({ origin: true, credentials: true, exposedHeaders: ["Set-Cookie"] }));
 app.use(cookieParser());
 app.use(express.json());
 app.use('/api', router);
-
-
+app.set("trust proxy")
+app.enable('trust proxy')
 connectDB()
     .then(() => {
         app.listen(5000, () => {
