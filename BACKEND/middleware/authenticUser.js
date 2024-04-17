@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 
 exports.authenticateToken = async (req, res, next) => {
-    const token = await req.cookies?._vercel_jwt || req.cookies?.access;
+    const token = await req.cookies?.access;
     // const token = authHeader && authHeader.split(' ')[1];
     console.log("Token " + token);
 
