@@ -59,7 +59,7 @@ exports.loginUser = async (req, res) => {
         // Send the tokens to the client
         const options = {
             secure: true,
-            SameSite: 'None',
+            SameSite: None,
             domain: '.coding-platform-0r4n.onrender.com'
         }
 
