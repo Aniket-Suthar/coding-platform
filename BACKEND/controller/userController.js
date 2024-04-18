@@ -57,9 +57,14 @@ exports.loginUser = async (req, res) => {
         const refreshToken = jwt.sign({ userId: user._id }, process.env.REFRESH_TOKEN_SECRET);
 
         // Send the tokens to the client
+        const options = {
+            sameSite: 'none',
+            secure: true,
+            httpOnly: false
+        }
 
         res.status(200)
-            .cookie("access", accessToken, SameSite = 'None')
+            .cookie("access", accessToken, options)
             .json({ message: "User Found", userId: user._id, accessToken, refreshToken });
 
     }
