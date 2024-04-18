@@ -129,8 +129,10 @@ export default function SignIn() {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
+                            InputProps={{ style: { color: 'white' } }}
                             InputLabelProps={{ style: { color: 'white' } }}
                             sx={{ border: '1px solid white', borderRadius: '8px', color: 'white' }}
+
                             autoFocus
                         />
                         <TextField
@@ -140,11 +142,13 @@ export default function SignIn() {
                             name="password"
                             label="Password"
                             InputLabelProps={{ style: { color: 'white' } }}
+                            InputProps={{ style: { color: 'white' } }}
                             type="password"
                             onChange={handleChange}
                             value={formData.password}
                             sx={{ border: '1px solid white', borderRadius: '8px', color: 'white' }}
                             id="password"
+
 
                         />
                         <Button

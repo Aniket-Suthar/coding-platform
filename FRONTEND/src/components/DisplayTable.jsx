@@ -90,13 +90,13 @@ function CodingQuestionForm() {
                             <tbody>
                                 {questions.map(question => (
                                     <tr key={question.id} className={`border-b border-gray-300 ${getColorClass(question.difficultyLevel)}`}>
-                                        <td className="py-3 px-4">{question.questionName}</td>
-                                        <td className="py-3 px-4">{question.difficultyLevel}</td>
-                                        <td className="py-3 px-4"><a href={question.url} className="text-blue-500 hover:underline">{question.url}</a></td>
-                                        <td className="py-3 px-4">{question.conceptType}</td>
+                                        <td className="py-3 px-4 font-bold">{question.questionName}</td>
+                                        <td className="py-3 px-4 font-bold">{question.difficultyLevel}</td>
+                                        <td className="py-3 px-4 font-bold"><a href={question.url} className="text-blue-900 hover:underline">{question.url}</a></td>
+                                        <td className="py-3 px-4 font-bold">{question.conceptType}</td>
                                         <td className="py-3 px-4">
-                                            <button onClick={() => handleEdit(question)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">Edit</button>
-                                            <button onClick={() => handleDelete(question)} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
+                                            <button onClick={() => handleEdit(question)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 border-b border-black">Edit</button>
+                                            <button onClick={() => handleDelete(question)} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-b border-black">Delete</button>
                                         </td>
                                     </tr>
                                 ))}
@@ -181,11 +181,11 @@ function CodingQuestionForm() {
 const getColorClass = (difficultyLevel) => {
     switch (difficultyLevel) {
         case 'easy':
-            return 'bg-green-400';
+            return 'bg-green-500';
         case 'medium':
-            return 'bg-yellow-200';
+            return 'bg-yellow-500';
         case 'hard':
-            return 'bg-red-200';
+            return 'bg-red-500';
         default:
             return '';
     }

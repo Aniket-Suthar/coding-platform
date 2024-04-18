@@ -17,12 +17,13 @@ const ACTIVE_COLOR = "blue.400";
 const LanguageSelector = ({ language, onSelect }) => {
   return (
     <Box ml={2} mb={3}>
-      <a href="/" style={{ color: "white", marginLeft: '10px', fontWeight: "bold", fontSize: "2rem" }}><IconButton><CottageIcon sx={{ fontSize: 40 }} style={{ marginTop: '-4rem', marginBottom: '-3rem' }} /></IconButton>  &nbsp; Code Playground</a>
-      <Text fontSize="lg" color="green.400">
-        Language:
-      </Text>
+      <a href="/"
+        style={{ fontWeight: "bold", fontSize: "2rem", marginTop: '-4rem', color: "white" }}><CottageIcon sx={{ fontSize: 40 }} style={{ marginTop: '-1rem', color: "white" }} />&nbsp;Code Playground</a>
+
       <Menu isLazy>
-        <MenuButton as={Button}>{language}</MenuButton>
+        <Text fontSize="lg" color="white">
+          Language:  <MenuButton as={Button}>{language}</MenuButton>
+        </Text>
         <MenuList bg="white">
           {languages.map(([lang, version]) => (
             <MenuItem

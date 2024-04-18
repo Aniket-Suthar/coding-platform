@@ -32,18 +32,18 @@ const Output = ({ editorRef, language }) => {
 
   return (
     <Box w="50%">
-      <Text mb={2} fontSize="lg" color="blue.500">
-        Output:
+      <Text mb={2} mt={12} fontSize="lg" color="white">
+        Output :   <Button
+          variant="outline"
+          colorScheme="green"
+
+          isLoading={isLoading}
+          onClick={runCode}
+        >
+          Run Code
+        </Button>
       </Text>
-      <Button
-        variant="outline"
-        colorScheme="green"
-        mb={4}
-        isLoading={isLoading}
-        onClick={runCode}
-      >
-        Run Code
-      </Button>
+
       <Box
         height="75vh"
         p={2}
@@ -56,7 +56,7 @@ const Output = ({ editorRef, language }) => {
           ? output.map((line, i) => <Text color="white" key={i}>{line}</Text>)
           : 'Click "Run Code" to see the output here'}
       </Box>
-    </Box>
+    </Box >
   );
 };
 export default Output;
