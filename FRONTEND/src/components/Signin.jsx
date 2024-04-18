@@ -97,7 +97,7 @@ export default function SignIn() {
 
     return (
         <ThemeProvider theme={defaultTheme}>
-            <a href="/"><Button><CottageIcon sx={{ fontSize: 50 }} style={{ marginLeft: '1rem', marginTop: '1rem' }} /></Button></a>
+            <a onClick={handleHome}><Button><CottageIcon sx={{ fontSize: 50 }} style={{ marginLeft: '1rem', marginTop: '1rem' }} /></Button></a>
             <Container component="main" maxWidth="xs" sx={{ border: '1px solid white', borderRadius: '8px', padding: '16px', marginTop: '3rem' }}>
 
 

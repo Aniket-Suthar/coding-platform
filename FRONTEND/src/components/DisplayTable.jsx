@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import 'tailwindcss/tailwind.css';
 import CottageIcon from '@mui/icons-material/Cottage';
 
 function CodingQuestionForm() {
+
+    const navigateTo = useNavigate(); // Initialize useHistory
+
+    // Function to handle "Practice" button click
+    const handleHome = () => {
+        // Navigate to the '/practice' route
+        navigateTo('/');
+    };
     const [questions, setQuestions] = useState([]);
     const [editingQuestion, setEditingQuestion] = useState(null);
     const [formData, setFormData] = useState({
@@ -72,7 +81,7 @@ function CodingQuestionForm() {
 
     return (
         <>
-            <a href="/" className="absolute left-0" style={{ fontWeight: "bold", color: "white", marginTop: '1rem', fontSize: "2rem" }}><CottageIcon sx={{ fontSize: 50 }} style={{ marginLeft: '1rem' }} /> Personalized Questions</a>
+            <a onClick={handleHome} className="absolute left-0" style={{ fontWeight: "bold", color: "white", marginTop: '1rem', fontSize: "2rem" }}><CottageIcon sx={{ fontSize: 50 }} style={{ marginLeft: '1rem' }} /> Personalized Questions</a>
             <div className="flex justify-center items-center h-screen bg-gradient-to-br from-purple-900 to-black">
                 <div className="max-w-7xl w-full bg-white bg-opacity-80 shadow-lg rounded-lg overflow-hidden p-6 text-gray-800">
                     <h2 className="text-center text-2xl font-semibold mb-6">Predefined Questions</h2>

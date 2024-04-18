@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Button } from '@chakra-ui/react';
 import CottageIcon from '@mui/icons-material/Cottage';
+import { useNavigate } from 'react-router-dom';
 
 function CodingQuestionForm() {
+    const navigateTo = useNavigate(); // Initialize useHistory
+
+    // Function to handle "Practice" button click
+    const handleHome = () => {
+        // Navigate to the '/practice' route
+        navigateTo('/');
+    };
     const [successMessage, setSuccessMessage] = useState('');
     const [error, setErrorMessage] = useState('');
 
@@ -64,7 +70,7 @@ function CodingQuestionForm() {
     return (
         <>
 
-            <a href="/" className="absolute top-2 left-0p-2" style={{ fontWeight: "bold", fontSize: "2rem" }}><CottageIcon sx={{ fontSize: 40 }} style={{ marginLeft: '1rem' }} />  Add your Question</a>
+            <a onClick={handleHome} className="absolute top-2 left-0p-2" style={{ fontWeight: "bold", fontSize: "2rem" }}><CottageIcon sx={{ fontSize: 40 }} style={{ marginLeft: '1rem' }} />  Add your Question</a>
 
 
             <div className="flex justify-center items-center h-screen" style={{ background: 'linear-gradient(to bottom, #000000 0%, #660066 100%)' }}>
