@@ -59,7 +59,7 @@ exports.loginUser = async (req, res) => {
         // Send the tokens to the client
 
         res.status(200)
-            .cookie("access", accessToken, SameSite = 'None', Secure)
+            .cookie("access", accessToken, SameSite = 'None')
             .json({ message: "User Found", userId: user._id, accessToken, refreshToken });
 
     }
