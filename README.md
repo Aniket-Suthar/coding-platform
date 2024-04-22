@@ -126,11 +126,12 @@ Congratulations! You have successfully completed the setup.
 
 4. Signup page
    ![image](https://github.com/Aniket-Suthar/coding-platform/assets/117531809/36d47a14-98cd-41a7-8051-8fc1234612ef)
-   
 
-
-
+5. Community Page
+   ![image](https://github.com/Aniket-Suthar/coding-platform/assets/117531809/5a79f30b-3c2d-4baa-a301-0069c39b79d7)
 
 ---
 
 Feel free to reach out to us. for any questions or feedback.
+Mail us at - darshan.lce21@sot.pdpu.ac.in
+
