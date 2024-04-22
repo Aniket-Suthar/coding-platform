@@ -35,7 +35,7 @@ cd BACKEND
 2. Create a `.env` file inside the `BACKEND` folder and add the following lines:
 
 ```bash
-MONGO_URI="mongodb+srv://explorerdarshanlaljani:<Password>@cluster0.6caipl2.mongodb.net/"
+MONGO_URI="mongodb+srv://<Username>:<Password>@cluster0.6caipl2.mongodb.net/"
 ACCESS_TOKEN_SECRET=sometokenkey
 REFRESH_TOKEN_SECRET=sometokenkeynew
 ```
@@ -47,13 +47,13 @@ Make sure to replace `<Password>` with your actual MongoDB password.
 4. Install dependencies by running:
 
 ```bash
-npm install
+pnpm install
 ```
 
 5. Start the backend server:
 
 ```bash
-npm start
+npm run start
 ```
 
 ### 4. Frontend Setup
@@ -94,21 +94,22 @@ Congratulations! You have successfully completed the setup.
 
 ## Features
 
-- Community Suppart 
+- Community Support 
 - Code editing in differnt languages 
-- Personal Question Bank 
+- Personal Coding Question Bank 
 - User authentication
 
 ## Technologies Used
 
 - MongoDB
-- Node.js
 - Express.js
 - React
+- Node.js
+- RESTful APIs
 
 ## Contributors
 
-- Aniker Kumar Suthar
+- Aniker Suthar
 - Darshan Laljani
 
 ---
