@@ -5,6 +5,8 @@
 CodeBoost brings you a variety of interesting coding challenges. Our user-friendly platform fosters a supportive community where developers at any level can improve their programming skills and grow continuously.
 
 This README provides instructions for setting up and running the Code Boost platform on your local machine.
+## Deployed link 
+- https://coding-platform-eight.vercel.app/
 
 ## Setup Instructions
 
@@ -111,6 +113,23 @@ Congratulations! You have successfully completed the setup.
 
 - Aniker Suthar
 - Darshan Laljani
+
+## Website previews
+1. Home page
+   ![image](https://github.com/Aniket-Suthar/coding-platform/assets/117531809/bb233319-58a9-4aaa-a9fc-a1b824671b1a)
+
+2. Code Editor
+   ![image](https://github.com/Aniket-Suthar/coding-platform/assets/117531809/ebdd31df-1bd1-4ece-99a3-5a76fe5a4210)
+
+3. Question Bank
+   ![image](https://github.com/Aniket-Suthar/coding-platform/assets/117531809/b07e6028-263a-4d38-a81c-0ecab44e6342)
+
+4. Signup page
+   ![image](https://github.com/Aniket-Suthar/coding-platform/assets/117531809/36d47a14-98cd-41a7-8051-8fc1234612ef)
+   
+
+
+
 
 ---
 
