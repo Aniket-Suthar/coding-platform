@@ -158,7 +158,7 @@ export default function Home() {
               </div>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <Button sx={{ marginRight: '8px', fontWeight: 'bold', color: 'white ' }}>About Us</Button>
+
               {userData === 'Hello' ? (
                 <>
                   <Button onClick={handleLogout} sx={{ borderColor: '#6A1B9A', color: 'white', marginRight: '8px' }} variant="outlined">Logout</Button>
